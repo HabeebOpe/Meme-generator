@@ -1,4 +1,5 @@
 import React from "react";
+//import memeImage from "./images/meme.png";
 
 export default function Meme(){
   return(

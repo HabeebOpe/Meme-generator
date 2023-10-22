@@ -5,10 +5,12 @@ import MemeDisplay from "./meme"
 
 export default function App(){
   return(
-    <div>
-      <Nav />
+    <div className="app-section">
+    <Nav />
+      <div className="flex-div">
       <Input />
       <MemeDisplay />
+      </div>
     </div>
   )
 }
