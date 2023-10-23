@@ -1,16 +1,13 @@
 import React from "react";
-import Nav from "./Nav"
-import Input from "./input"
-import MemeDisplay from "./meme"
+import Nav from "./Nav";
+import Section from "./meme";
+import Example from "./example"
 
 export default function App(){
   return(
     <div className="app-section">
     <Nav />
-      <div className="flex-div">
-      <Input />
-      <MemeDisplay />
-      </div>
+    <Section />
     </div>
   )
 }
