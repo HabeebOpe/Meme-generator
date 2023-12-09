@@ -10,16 +10,11 @@ export default function Meme(){
   })
   const [updatedTopText, setUpdatedTopText] = useState(meme.topText)
   const [updatedBottomText, setUpdatedBottomText] = useState(meme.topText)
-  const [allMemeImage, setAllMemeImage] = React.useState(memesData)
   function generateMeme() {
-    const memesArray = allMemeImage.data.memes
-    const randomNumber = Math.floor(Math.random() * memesArray.length)
-    const memeSrc = memesArray[randomNumber].src
     setMeme(prevMeme => ({
       ...prevMeme,
       topText: updatedTopText,
-      bottomText: updatedBottomText,
-      randomImage: memeSrc
+      bottomText: updatedBottomText
     }))
   }
   return(

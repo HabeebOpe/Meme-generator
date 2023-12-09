@@ -11,7 +11,7 @@
     "install-dep": "npm i --no-bin-links",
     "build": "webpack",
     "build-prod": "webpack --mode production",
-    "start": "webpack serve --hot --mode development"
+    "start": "webpack"
   },
   "dependencies": {
     "react": "^17.0.2",
